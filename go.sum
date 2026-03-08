@@ -1,0 +1,4 @@
+github.com/Compogo/compogo v0.0.3 h1:I5QYh3UJXUCkFQ+ygL8jfA+uEH8ZQzOlq9+vwffIdfQ=
+github.com/Compogo/compogo v0.0.3/go.mod h1:LbPhr7u4g11Lv8c9tifDnD7aJf3nNRhdsz1LlMdMGcY=
+go.uber.org/dig v1.19.0 h1:BACLhebsYdpQ7IROQ1AGPjrXcP5dF80U3gKoFzbaq/4=
+go.uber.org/dig v1.19.0/go.mod h1:Us0rSJiThwCv2GteUN0Q7OKvU7n5J4dxZ9JKUXozFdE=
