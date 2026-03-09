@@ -14,11 +14,11 @@ func NewDecorator(dig *dig.Container) *Decorator {
 	return &Decorator{dig: dig}
 }
 
-func (container *Decorator) Provide(constructor any) error {
+func (container *Decorator) Provide(constructor interface{}) error {
 	return container.dig.Provide(constructor)
 }
 
-func (container *Decorator) Provides(constructors ...any) error {
+func (container *Decorator) Provides(constructors ...interface{}) error {
 	var errs error
 
 	for _, constructor := range constructors {
@@ -30,6 +30,6 @@ func (container *Decorator) Provides(constructors ...any) error {
 	return errs
 }
 
-func (container *Decorator) Invoke(function any) error {
+func (container *Decorator) Invoke(function interface{}) error {
 	return container.dig.Invoke(function)
 }
