@@ -12,6 +12,7 @@ func WithDig() compogo.Option {
 	decorator := NewDecorator(dig)
 
 	return compogo.WithContainer(decorator, &component.Component{
+		Name: "container.Dig",
 		Init: component.StepFunc(func(c container.Container) error {
 			return c.Provides(
 				func() *uberDig.Container { return dig },
