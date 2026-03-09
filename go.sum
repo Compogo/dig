@@ -4,5 +4,7 @@ github.com/Compogo/compogo v0.0.6 h1:revhesGd+4+H8rOxvn2zcASJZOJyJfLEoIm86AWGFik
 github.com/Compogo/compogo v0.0.6/go.mod h1:LbPhr7u4g11Lv8c9tifDnD7aJf3nNRhdsz1LlMdMGcY=
 github.com/Compogo/compogo v0.0.7 h1:iMZBJZRrHuQCkRU8WIflADB6mS0wBqDFU0/rM6LPx2g=
 github.com/Compogo/compogo v0.0.7/go.mod h1:LbPhr7u4g11Lv8c9tifDnD7aJf3nNRhdsz1LlMdMGcY=
+github.com/Compogo/compogo v0.0.15 h1:UpOCQ4HTD8e5KUYXUoHavUDTQ/Ji1uWfN1KbBddVsVk=
+github.com/Compogo/compogo v0.0.15/go.mod h1:LbPhr7u4g11Lv8c9tifDnD7aJf3nNRhdsz1LlMdMGcY=
 go.uber.org/dig v1.19.0 h1:BACLhebsYdpQ7IROQ1AGPjrXcP5dF80U3gKoFzbaq/4=
 go.uber.org/dig v1.19.0/go.mod h1:Us0rSJiThwCv2GteUN0Q7OKvU7n5J4dxZ9JKUXozFdE=
