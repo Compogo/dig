@@ -9,15 +9,15 @@ import (
 
 func WithDig() compogo.Option {
 	dig := uberDig.New()
-	decorator := NewDecorator(dig)
+	digContainer := NewContainer(dig)
 
-	return compogo.WithContainer(decorator, &component.Component{
+	return compogo.WithContainer(digContainer, &component.Component{
 		Name: "container.Dig",
 		Init: component.StepFunc(func(c container.Container) error {
 			return c.Provides(
 				func() *uberDig.Container { return dig },
-				func() *Decorator { return decorator },
-				func(decorator *Decorator) container.Container { return decorator },
+				func() *Container { return digContainer },
+				func(decorator *Container) container.Container { return decorator },
 			)
 		}),
 	})

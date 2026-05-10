@@ -6,19 +6,19 @@ import (
 	"go.uber.org/dig"
 )
 
-type Decorator struct {
+type Container struct {
 	dig *dig.Container
 }
 
-func NewDecorator(dig *dig.Container) *Decorator {
-	return &Decorator{dig: dig}
+func NewContainer(dig *dig.Container) *Container {
+	return &Container{dig: dig}
 }
 
-func (container *Decorator) Provide(constructor interface{}) error {
+func (container *Container) Provide(constructor interface{}) error {
 	return container.dig.Provide(constructor)
 }
 
-func (container *Decorator) Provides(constructors ...interface{}) error {
+func (container *Container) Provides(constructors ...interface{}) error {
 	var errs error
 
 	for _, constructor := range constructors {
@@ -30,6 +30,6 @@ func (container *Decorator) Provides(constructors ...interface{}) error {
 	return errs
 }
 
-func (container *Decorator) Invoke(function interface{}) error {
+func (container *Container) Invoke(function any) error {
 	return container.dig.Invoke(function)
 }
